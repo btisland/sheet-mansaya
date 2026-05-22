@@ -185,6 +185,15 @@
   .step-img.half { max-width: 420px; }
   .step-img.quarter { max-width: 280px; }
 
+  /* Site header logo */
+  .site-header { margin-bottom: 32px; }
+  .site-logo { height: 104px; display: block; }
+
+  /* 圖片可點擊放大 */
+  a.img-link { display: block; }
+  a.img-link img { transition: opacity 0.15s; }
+  a.img-link:hover img { opacity: 0.85; cursor: zoom-in; }
+
   /* Alert boxes */
   .alert {
     padding: 14px 18px;
@@ -307,6 +316,10 @@
 <div class="doc">
 
   <!-- Cover -->
+  <div class="site-header">
+    <img src="../assets/logo.png" alt="Sheet 萬事屋" class="site-logo">
+  </div>
+
   <div class="cover">
     <div class="cover-badge">Sheet 萬事屋 · A#01</div>
     <h1 style="margin-bottom:46px;">&#128240; 產業新聞雷達 <span style="font-weight:500;opacity:0.85;">安裝說明</span></h1>
@@ -352,7 +365,7 @@
       <div class="step-body">
         <h3>進入共用資料夾，找到 Sheet 檔案</h3>
         <p>請先確認已登入 Google 帳號，再開啟我提供的 Google Drive 連結。你會看到資料夾裡有一個 Google 試算表（綠色圖示）。</p>
-        <img class="step-img" src="images/1779266898000.jpg" alt="Drive 資料夾畫面">
+        <a href="images/1779266898000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779266898000.jpg" alt="Drive 資料夾畫面"></a>
       </div>
     </div>
 
@@ -361,7 +374,7 @@
       <div class="step-body">
         <h3>對 Sheet 按右鍵 → 選「建立副本」</h3>
         <p>對著 Sheet 檔案按右鍵，在選單中選擇「建立副本」。</p>
-        <img class="step-img" src="images/1779266908000.jpg" alt="右鍵選建立副本">
+        <a href="images/1779266908000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779266908000.jpg" alt="右鍵選建立副本"></a>
       </div>
     </div>
 
@@ -370,7 +383,7 @@
       <div class="step-body">
         <h3>副本已出現在「我的雲端硬碟」，點它開啟</h3>
         <p>複製完成後，請手動點選左側「我的雲端硬碟」，就會看到「Sheet萬事屋-A01-產業新聞雷達 的副本」，點它開啟。</p>
-        <img class="step-img" src="images/1779266931000.jpg" alt="副本出現在我的雲端硬碟">
+        <a href="images/1779266931000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779266931000.jpg" alt="副本出現在我的雲端硬碟"></a>
       </div>
     </div>
   </section>
@@ -391,7 +404,7 @@
         <h3>填入關鍵字（B4–B23，最多 20 個）</h3>
         <p>開啟副本後，切換到「⚙️ 設定」頁，在 <code>關鍵字 1</code> 到 <code>關鍵字 20</code> 的右側 B 欄，填入你想追蹤的產業或公司名稱。每格一個，空白格會自動跳過。</p>
         <p><strong>範例：</strong>台積電、聯發科、台達電、蘋果、AI 晶片……</p>
-        <img class="step-img" src="images/1779267168000.jpeg" alt="設定頁填入關鍵字與 Email">
+        <a href="images/1779267168000.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779267168000.jpeg" alt="設定頁填入關鍵字與 Email"></a>
       </div>
     </div>
 
@@ -419,7 +432,7 @@
       <div class="step-body">
         <h3>點選「📡 新聞雷達」→「▶ 立即抓取並推播」</h3>
         <p>填好設定後，點頂端選單「📡 新聞雷達」，再點「▶ 立即抓取並推播」（如圖中 ③）。這次執行同時完成授權和第一次測試。</p>
-        <img class="step-img" src="images/1779267168000.jpeg" alt="開啟選單點立即抓取並推播">
+        <a href="images/1779267168000.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779267168000.jpeg" alt="開啟選單點立即抓取並推播"></a>
       </div>
     </div>
 
@@ -428,7 +441,7 @@
       <div class="step-body">
         <h3>跳出「需要授權」→ 點「確定」</h3>
         <p>第一次執行會彈出授權視窗，點「確定」繼續。</p>
-        <img class="step-img half" src="images/1779267192000.jpg.jpeg" alt="需要授權視窗">
+        <a href="images/1779267192000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img half" src="images/1779267192000.jpg.jpeg" alt="需要授權視窗"></a>
       </div>
     </div>
 
@@ -437,7 +450,7 @@
       <div class="step-body">
         <h3>Google 警告畫面 → 點左下角「進階」</h3>
         <p>Google 會顯示「這個應用程式未經 Google 驗證」的警告。<strong>這是正常的</strong>，這代表工具尚未完成 Google 官方驗證流程。請點左下角「進階」繼續。</p>
-        <img class="step-img half" src="images/1779267202000.jpg.jpeg" alt="Google 未驗證警告，點進階">
+        <a href="images/1779267202000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img half" src="images/1779267202000.jpg.jpeg" alt="Google 未驗證警告，點進階"></a>
         <div class="alert warning">
           <strong>&#9888;&#65039; 這個警告是正常現象！</strong>它不代表有安全問題。授權清單中你可以確認工具只存取你的 Sheet 和 Gmail。
         </div>
@@ -449,7 +462,7 @@
       <div class="step-body">
         <h3>點「前往 Sheet 萬事屋-A01-產業新聞雷達（不安全）」</h3>
         <p>點「進階」後會展開連結，點它繼續進行授權。</p>
-        <img class="step-img half" src="images/1779267207000.jpg.jpeg" alt="點前往不安全連結">
+        <a href="images/1779267207000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img half" src="images/1779267207000.jpg.jpeg" alt="點前往不安全連結"></a>
       </div>
     </div>
 
@@ -458,8 +471,8 @@
       <div class="step-body">
         <h3>勾選授權範圍 → 點「繼續」</h3>
         <p>系統列出工具需要存取的範圍，勾選「全選」後，點「繼續」完成授權。</p>
-        <img class="step-img half" src="images/1779267222000.jpg.jpeg" alt="授權範圍頁面（全選）">
-        <img class="step-img half" src="images/1779267231000.jpg" alt="確認授權，點繼續" style="margin-top:12px;">
+        <a href="images/1779267222000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img half" src="images/1779267222000.jpg.jpeg" alt="授權範圍頁面（全選）"></a>
+        <a href="images/1779267231000.jpg" target="_blank" class="img-link"><img class="step-img half" src="images/1779267231000.jpg" alt="確認授權，點繼續" style="margin-top:12px;"></a>
         <div class="alert info">
           <strong>&#128203; 工具會存取以下範圍：</strong><br>
           &#10003; 你的 Google 試算表（讀取和寫入這個 Sheet）<br>
@@ -474,8 +487,8 @@
       <div class="step-num-circle">6</div>
       <div class="step-body">
         <h3>看到「✅ 完成！共推播 XX 則新文章。」</h3>
-        <p>授權完成後，工具會立即抓取一次新聞。出現這個訊息就代表設定成功！</p>
-        <img class="step-img half" src="images/1779267247000.jpg.jpeg" alt="完成共推播 14 則新文章">
+        <p>授權完成後，工具會立即抓取一次新聞。<strong>這一步需要向 Google News 抓取資料，可能需要稍等 10–30 秒。</strong>出現這個訊息就代表設定成功！</p>
+        <a href="images/1779267247000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img half" src="images/1779267247000.jpg.jpeg" alt="完成共推播 14 則新文章"></a>
       </div>
     </div>
 
@@ -484,7 +497,7 @@
       <div class="step-body">
         <h3>確認 Email 收信</h3>
         <p>到你填入的 Email 信箱，應該可以看到一封主旨為「產業新聞雷達 | 日期」的郵件，裡面按關鍵字分類列出最新新聞。</p>
-        <img class="step-img" src="images/1779267315000.jpg" alt="Email 收到的新聞摘要">
+        <a href="images/1779267315000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779267315000.jpg" alt="Email 收到的新聞摘要"></a>
       </div>
     </div>
   </section>
@@ -504,7 +517,7 @@
       <div class="step-body">
         <h3>點「📡 新聞雷達」→「🔕 每日推播排程：關閉中（點此開啟）」</h3>
         <p>再次點開選單，找到排程選項並點一下，開啟每日自動排程。</p>
-        <img class="step-img" src="images/1779267567000.jpg.jpeg" alt="點選開啟排程">
+        <a href="images/1779267567000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779267567000.jpg.jpeg" alt="點選開啟排程"></a>
       </div>
     </div>
 
@@ -513,7 +526,7 @@
       <div class="step-body">
         <h3>看到「✅ 每日自動排程已開啟！」</h3>
         <p>出現確認訊息就完成了！之後每天在你設定的時間，工具會自動抓取新聞並推播，完全不需要手動操作。</p>
-        <img class="step-img" src="images/1779267588000.jpg.jpeg" alt="排程開啟確認訊息">
+        <a href="images/1779267588000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779267588000.jpg.jpeg" alt="排程開啟確認訊息"></a>
         <div class="alert info">
           <strong>&#128161; 修改推播時間：</strong>直接改 B27 的數字，排程會自動套用新時間，不需要重新開啟。
         </div>
@@ -558,13 +571,6 @@
       <p style="font-size:13px;color:#555;margin-top:10px;">兩個後台管理的是<strong>同一個 LINE 官方帳號</strong>的不同面向。設定過程中你會在兩個後台之間切換，這是正常的。</p>
     </div>
 
-    <!-- Token / User ID 說明 -->
-    <div class="alert note" style="margin-bottom:28px;">
-      <strong>&#10067; Channel Access Token 和 User ID 是什麼？</strong><br><br>
-      <strong>Channel Access Token</strong>：Bot 的「API 密鑰」。讓你的 Google 試算表程式能代表這個 Bot 對外發送訊息。就像 Bot 的密碼，拿著它才能呼叫 LINE API。不可分享給他人。<br><br>
-      <strong>Your user ID</strong>：你的 LINE 帳號在這個 Bot 中的「收件地址」。程式需要知道要把訊息發給誰，這個 ID 就是你的識別碼。每個用戶對每個 Bot 的 ID 都不同。
-    </div>
-
     <!-- A. 建立 Provider -->
     <div class="sub-section">
       <p class="sub-section-title">A &nbsp;&#183;&nbsp; 進入 LINE Developers Console</p>
@@ -574,7 +580,7 @@
         <div class="step-body">
           <h3>前往 developers.line.biz，點「Log in to Console」</h3>
           <p>在瀏覽器輸入 <code>developers.line.biz</code>，點右上角「Log in to Console」按鈕。</p>
-          <img class="step-img" src="images/1779267674000.jpg" alt="LINE Developers 首頁">
+          <a href="images/1779267674000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779267674000.jpg" alt="LINE Developers 首頁"></a>
         </div>
       </div>
 
@@ -583,7 +589,7 @@
         <div class="step-body">
           <h3>用 LINE 帳號登入</h3>
           <p>選擇「LINE帳號」登入方式，輸入你的 LINE 帳號和密碼。</p>
-          <img class="step-img half" src="images/1779267682000.jpg" alt="LINE Business ID 登入，點 LINE帳號">
+          <a href="images/1779267682000.jpg" target="_blank" class="img-link"><img class="step-img half" src="images/1779267682000.jpg" alt="LINE Business ID 登入，點 LINE帳號"></a>
         </div>
       </div>
 
@@ -592,7 +598,7 @@
         <div class="step-body">
           <h3>建立 Provider，填入名稱後點「Create」</h3>
           <p>登入後如果還沒有 Provider，點「Create a new provider」，輸入一個名稱（例如你的名字或品牌），點「Create」。Provider 是你所有 LINE Bot 的「管理容器」。</p>
-          <img class="step-img" src="images/1779269094000.jpg" alt="建立 Provider 對話框">
+          <a href="images/1779269094000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779269094000.jpg" alt="建立 Provider 對話框"></a>
         </div>
       </div>
     </div>
@@ -606,7 +612,7 @@
         <div class="step-body">
           <h3>在 Provider 頁面，選「Create a Messaging API channel」</h3>
           <p>Provider 建立後，你會看到幾個 channel 類型，點「Create a Messaging API channel」。</p>
-          <img class="step-img" src="images/1779269126000.jpg" alt="選 Create a Messaging API channel">
+          <a href="images/1779269126000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779269126000.jpg" alt="選 Create a Messaging API channel"></a>
         </div>
       </div>
 
@@ -615,7 +621,7 @@
         <div class="step-body">
           <h3>系統提示需要先建立官方帳號 → 點「Create a LINE Official Account」</h3>
           <p>LINE 目前需要透過 Official Account Manager 建立帳號，再回來連結。點綠色按鈕前往建立。</p>
-          <img class="step-img" src="images/1779269197000.jpg" alt="點 Create a LINE Official Account">
+          <a href="images/1779269197000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779269197000.jpg" alt="點 Create a LINE Official Account"></a>
         </div>
       </div>
 
@@ -624,7 +630,7 @@
         <div class="step-body">
           <h3>填入帳號資訊，點「確定」</h3>
           <p>填入 ① 帳號名稱（這會是 Bot 在 LINE 上的顯示名稱）、② 電子郵件、③ 國家、④ 業種，然後點⑤「確定」。</p>
-          <img class="step-img" src="images/1779269301000.jpg" alt="填入 LINE 官方帳號資訊">
+          <a href="images/1779269301000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779269301000.jpg" alt="填入 LINE 官方帳號資訊"></a>
         </div>
       </div>
 
@@ -633,7 +639,7 @@
         <div class="step-body">
           <h3>確認輸入內容，點「完成」</h3>
           <p>確認填入的資訊正確，點「完成」。</p>
-          <img class="step-img half" src="images/1779269361000.jpg.jpeg" alt="確認輸入內容，點完成">
+          <a href="images/1779269361000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img half" src="images/1779269361000.jpg.jpeg" alt="確認輸入內容，點完成"></a>
         </div>
       </div>
 
@@ -642,7 +648,7 @@
         <div class="step-body">
           <h3>官方帳號建立完成 → 點「稍後進行認證（前往管理畫面）」</h3>
           <p>看到「您的 LINE 官方帳號已建立完成」，向下捲動點「稍後進行認證（前往管理畫面）」，進入 Official Account Manager。</p>
-          <img class="step-img half" src="images/1779269416000.jpg" alt="點稍後進行認證前往管理畫面">
+          <a href="images/1779269416000.jpg" target="_blank" class="img-link"><img class="step-img half" src="images/1779269416000.jpg" alt="點稍後進行認證前往管理畫面"></a>
         </div>
       </div>
     </div>
@@ -656,7 +662,7 @@
         <div class="step-body">
           <h3>同意使用資訊 → 點「同意」</h3>
           <p>進入 Official Account Manager 後，第一次會出現資料使用同意書，點「同意」。</p>
-          <img class="step-img half" src="images/1779269443000.jpg" alt="同意使用資訊">
+          <a href="images/1779269443000.jpg" target="_blank" class="img-link"><img class="step-img half" src="images/1779269443000.jpg" alt="同意使用資訊"></a>
         </div>
       </div>
 
@@ -665,7 +671,7 @@
         <div class="step-body">
           <h3>服務條款更新通知 → 點「了解並繼續使用」</h3>
           <p>接著會出現服務條款更新通知，點綠色按鈕繼續。</p>
-          <img class="step-img half" src="images/1779269454000.jpg" alt="服務條款更新，點了解並繼續使用">
+          <a href="images/1779269454000.jpg" target="_blank" class="img-link"><img class="step-img half" src="images/1779269454000.jpg" alt="服務條款更新，點了解並繼續使用"></a>
         </div>
       </div>
 
@@ -674,7 +680,7 @@
         <div class="step-body">
           <h3>進入管理後台，關閉歡迎彈窗</h3>
           <p>進入 Official Account Manager 主頁，會跳出「開始經營帳號前」引導彈窗，點右上角 × 關閉即可。</p>
-          <img class="step-img" src="images/1779269515000.jpg.jpeg" alt="OA Manager 主頁，關閉彈窗">
+          <a href="images/1779269515000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779269515000.jpg.jpeg" alt="OA Manager 主頁，關閉彈窗"></a>
         </div>
       </div>
 
@@ -683,7 +689,7 @@
         <div class="step-body">
           <h3>設定 → 回應設定，關閉「加入好友的歡迎訊息」和「自動回應訊息」</h3>
           <p>點右上角「⚙️ 設定」→「回應設定」，找到 ③「加入好友的歡迎訊息」和 ④「自動回應訊息」，把兩個開關都關閉。這樣 Bot 才不會自動回覆用戶的訊息。</p>
-          <img class="step-img" src="images/1779269721000.jpg.jpeg" alt="回應設定，關閉歡迎訊息和自動回應">
+          <a href="images/1779269721000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779269721000.jpg.jpeg" alt="回應設定，關閉歡迎訊息和自動回應"></a>
         </div>
       </div>
     </div>
@@ -697,7 +703,7 @@
         <div class="step-body">
           <h3>設定 → Messaging API → 點「啟用 Messaging API」</h3>
           <p>在「設定」左側選單點 ① Messaging API，再點 ② 綠色按鈕「啟用 Messaging API」。</p>
-          <img class="step-img" src="images/1779269733000.jpg.jpeg" alt="啟用 Messaging API">
+          <a href="images/1779269733000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779269733000.jpg.jpeg" alt="啟用 Messaging API"></a>
         </div>
       </div>
 
@@ -706,7 +712,7 @@
         <div class="step-body">
           <h3>選擇服務提供者（Provider），點「同意」</h3>
           <p>選取你剛才在 Developer Console 建立的 Provider（如 SmartBot），點「同意」。</p>
-          <img class="step-img half" src="images/1779269745000.jpg.jpeg" alt="選擇服務提供者">
+          <a href="images/1779269745000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779269745000.jpg.jpeg" alt="選擇服務提供者"></a>
         </div>
       </div>
 
@@ -715,7 +721,7 @@
         <div class="step-body">
           <h3>隱私權政策填寫（可略）→ 點「確定」；確認啟用 → 點「確定」</h3>
           <p>隱私權政策欄位可以留空，直接點「確定」。接著確認帳號名稱和 Provider 名稱無誤，再點「確定」完成啟用。</p>
-          <img class="step-img half" src="images/1779269760000.jpg.jpeg" alt="隱私權政策，點確定">
+          <a href="images/1779269760000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img half" src="images/1779269760000.jpg.jpeg" alt="隱私權政策，點確定"></a>
         </div>
       </div>
     </div>
@@ -724,12 +730,18 @@
     <div class="sub-section">
       <p class="sub-section-title">E &nbsp;&#183;&nbsp; 回到 Developer Console，取得 Token 和 User ID</p>
 
+      <div class="alert note" style="margin-bottom:28px;">
+        <strong>&#10067; Channel Access Token 和 User ID 是什麼？</strong><br><br>
+        <strong>Channel Access Token</strong>：Bot 的「API 密鑰」。讓你的 Google 試算表程式能代表這個 Bot 對外發送訊息。就像 Bot 的密碼，拿著它才能呼叫 LINE API。不可分享給他人。<br><br>
+        <strong>Your user ID</strong>：你的 LINE 帳號在這個 Bot 中的「收件地址」。程式需要知道要把訊息發給誰，這個 ID 就是你的識別碼。每個用戶對每個 Bot 的 ID 都不同。
+      </div>
+
       <div class="step">
         <div class="step-num-circle orange">16</div>
         <div class="step-body">
           <h3>回到 developers.line.biz，進入剛建立的 Channel → 點「Messaging API」分頁</h3>
           <p>回到 LINE Developers Console，在左側 Providers 找到你的 Provider，點進去看到剛建立的 Channel，進入後點「Messaging API」分頁。</p>
-          <img class="step-img" src="images/1779269890000.jpg" alt="Developer Console Messaging API 分頁">
+          <a href="images/1779269890000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779269890000.jpg" alt="Developer Console Messaging API 分頁"></a>
         </div>
       </div>
 
@@ -737,8 +749,8 @@
         <div class="step-num-circle orange">17</div>
         <div class="step-body">
           <h3>在「Channel access token」區塊，點「Issue」取得 Token，複製貼下</h3>
-          <p>找到「Channel access token (long-lived)」，點「Issue」按鈕產生 Token，產生後點旁邊的複製圖示。這就是你的 <strong>Channel Access Token</strong>，等下填入 Sheet 的 B30。</p>
-          <img class="step-img" src="images/1779269928000.jpg.jpeg" alt="Channel access token 已產生，複製">
+          <p>找到「Channel access token (long-lived)」，點「Issue」按鈕產生，再點旁邊的複製圖示。這串 Token 等下要填入 Sheet 的 B30。</p>
+          <a href="images/1779269928000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779269928000.jpg.jpeg" alt="Channel access token 已產生，複製"></a>
         </div>
       </div>
 
@@ -746,9 +758,9 @@
         <div class="step-num-circle orange">18</div>
         <div class="step-body">
           <h3>點「Basic settings」分頁，找到「Your user ID」，複製</h3>
-          <p>切換到「Basic settings」分頁，向下捲動找到「Your user ID」欄位，複製裡面的 ID（格式類似 <code>Uxxxxxxxxxxxxxxxxx</code>）。這就是你的 <strong>User ID</strong>，等下填入 Sheet 的 B31。</p>
-          <img class="step-img" src="images/1779269965000.jpg" alt="Basic settings 分頁">
-          <img class="step-img" src="images/1779269980000.jpg.jpeg" alt="Your user ID 欄位，複製" style="margin-top:12px;">
+          <p>切換到「Basic settings」分頁，向下捲動找到「Your user ID」欄位，複製裡面的 ID（格式類似 <code>Uxxxxxxxxxxxxxxxxx</code>）。這個 ID 等下要填入 Sheet 的 B31。</p>
+          <a href="images/1779269965000.jpg" target="_blank" class="img-link"><img class="step-img" src="images/1779269965000.jpg" alt="Basic settings 分頁"></a>
+          <a href="images/1779269980000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779269980000.jpg.jpeg" alt="Your user ID 欄位，複製" style="margin-top:12px;"></a>
         </div>
       </div>
     </div>
@@ -762,7 +774,7 @@
         <div class="step-body">
           <h3>在設定頁填入 Token（B30）和 User ID（B31），點「立即抓取並推播」</h3>
           <p>回到 Google 試算表，在 ① <code>B30</code> 貼上 Channel Access Token，② <code>B31</code> 貼上 User ID，然後點 ③「▶ 立即抓取並推播」測試。</p>
-          <img class="step-img" src="images/1779270088000.jpg.jpeg" alt="填入 Token 和 User ID，點立即推播">
+          <a href="images/1779270088000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img" src="images/1779270088000.jpg.jpeg" alt="填入 Token 和 User ID，點立即推播"></a>
         </div>
       </div>
 
@@ -771,8 +783,8 @@
         <div class="step-body">
           <h3>看到完成訊息，確認 LINE 收到推播</h3>
           <p>出現「✅ 完成！共推播 XX 則新文章。」後，打開 LINE 確認 Bot 是否傳來新聞摘要卡片。</p>
-          <img class="step-img half" src="images/1779270104000.jpg.jpeg" alt="完成共推播 8 則新文章">
-          <img class="step-img quarter" src="images/1779353593000.jpg" alt="LINE 手機收到 Flex Message 卡片" style="margin-top:12px;">
+          <a href="images/1779270104000.jpg.jpeg" target="_blank" class="img-link"><img class="step-img half" src="images/1779270104000.jpg.jpeg" alt="完成共推播 8 則新文章"></a>
+          <a href="images/1779353593000.jpg" target="_blank" class="img-link"><img class="step-img half" src="images/1779353593000.jpg" alt="LINE 手機收到 Flex Message 卡片" style="margin-top:12px;"></a>
         </div>
       </div>
     </div>
