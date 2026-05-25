@@ -33,8 +33,8 @@ def update_html(html_path: Path) -> int:
             updated += 1
         return new_tag
 
-    # 匹配 src="相對路徑/圖片"，去除舊的 ?v=... 再重新加
-    pattern = r'(src=")([^"?]+\.(?:jpg|jpeg|png|gif|webp|svg))(?:\?v=[^"]*)?(")'
+    # 匹配 src="/srcset="相對路徑/圖片"，去除舊的 ?v=... 再重新加
+    pattern = r'((?:src|srcset)=")([^"?]+\.(?:jpg|jpeg|png|gif|webp|svg))(?:\?v=[^"]*)?(")'
     content = re.sub(pattern, replace_src, content, flags=re.IGNORECASE)
     html_path.write_text(content, encoding='utf-8')
     return updated
